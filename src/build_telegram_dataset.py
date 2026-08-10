@@ -46,7 +46,7 @@ LABEL_MAP = {
 
 
 def scrape_telegram_data(target_messages_per_channel=200):
-    output_filename = "telegram_natural_dataset.csv"
+    output_filename = "data/raw/telegram_natural_dataset.csv"
 
     file_exists = os.path.isfile(output_filename)
     with open(output_filename, "a", newline="", encoding="utf-8") as f:

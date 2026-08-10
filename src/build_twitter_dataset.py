@@ -86,7 +86,7 @@ def setup_driver():
 
 
 def scrape_twitter_data(target_tweets_per_account=200):
-    output_filename = "twitter_natural_dataset.csv"
+    output_filename = "data/raw/twitter_natural_dataset.csv"
 
     completed_accounts = set()
     collected_texts = set()
