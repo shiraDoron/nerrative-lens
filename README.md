@@ -23,7 +23,9 @@ final_project/
 │   ├── ner.py                    # named-entity feature extractor
 │   ├── reliability.py            # fake-news / subjectivity confidence factor
 │   ├── srl.py                    # semantic role labeling (reason/purpose) extractor
-│   └── stance.py                 # BERTopic-based topic layer
+│   ├── stance.py                 # BERTopic-based topic layer
+│   ├── build_twitter_dataset.py  # Selenium-based X/Twitter scraper
+│   └── build_telegram_dataset.py # Telethon-based Telegram scraper
 ├── data/
 │   ├── raw/                      # source datasets (twitter/telegram/gemini/gpt CSVs)
 │   └── cache/                    # cached extracted features, shared vocabulary
@@ -34,16 +36,8 @@ final_project/
 ├── experiments/
 │   ├── with_mlp/                 # alternate MLP-based fusion checkpoint (for comparison)
 │   └── with_stance_model/        # alternate fusion variant with a stance dimension
-├── build_twitter_dataset.py       # Selenium-based X/Twitter scraper
-├── build_telegram_dataset.py      # Telethon-based Telegram scraper
-├── twitter_natural_dataset.csv    # scraped Twitter data
-├── telegram_natural_dataset.csv   # scraped Telegram data
 └── narrative_research_session.session  # local Telethon auth session (gitignored)
 ```
-
-> **Note:** `build_twitter_dataset.py`, `build_telegram_dataset.py`, and their output CSVs
-> currently still live at the repo root (not yet moved into `src/`/`data/raw/`) pending
-> completion of an in-progress scraping run.
 
 ## Running the Scripts
 
@@ -56,13 +50,8 @@ python src/analyze_agendas.py
 python src/check_agenda_coverage.py
 python src/train.py
 python src/train_topics.py
-```
-
-Scripts still at the repo root are run directly:
-
-```bash
-python build_twitter_dataset.py
-python build_telegram_dataset.py
+python src/build_twitter_dataset.py
+python src/build_telegram_dataset.py
 ```
 
 ## Environment Variables (Secrets)
@@ -122,3 +111,19 @@ narrative-oriented vector, which are combined by a learned weighted-sum fusion n
 
 The fusion network learns per-module importance weights, printed after training for
 interpretability.
+
+## Future Work
+
+- **Identify the leading account(s) per narrative group** — for each of the 7 narratives, the
+  Twitter/Telegram scrapers currently pull from a fixed list of accounts/channels treated
+  equally (see `NARRATIVES_ACCOUNTS` in `build_twitter_dataset.py`). A useful extension is to
+  determine which account within each group acts as the primary/most influential voice
+  ("group leader"), e.g. by engagement volume, retweet/citation frequency by the other accounts
+  in the same group, or centrality in a narrative-specific interaction graph:
+  - **Zionist**: `Israel`, `IDF`, `StandWithUs`, `AIPAC`, `IsraelMFA`, `AJCGlobal`, `JNS_org`
+  - **Resistance**: `khamenei_ir`, `PressTV`, `QudsNen`, `IrnaEnglish`, `TehranTimes79`, `MayadeenEnglish`
+  - **Western**: `NATO`, `EU_Commission`, `POTUS`, `StateDept`, `FCDOGovUK`, `GermanyDiplo`
+  - **Russian**: `KremlinRussia_E`, `mfa_russia`, `RussiaUN`, `RT_com`, `SputnikInt`, `tassagency_en`
+  - **Ukrainian**: `ZelenskyyUa`, `Ukraine`, `DefenceU`, `MFA_Ukraine`, `GeneralStaffUA`, `United24media`
+  - **Right-wing**: `FoxNews`, `BenShapiro`, `dailywire`, `Heritage`, `TPUSA`
+  - **Left-wing**: `novaramedia`, `BernieSanders`, `jacobin`, `democracynow`, `thenation`
