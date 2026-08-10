@@ -1,0 +1,11 @@
+# Secrets / credentials - never commit
+.env
+*.session
+*.session-journal
+
+# Python
+__pycache__/
+*.pyc
+
+# OS/editor noise
+.DS_Store
