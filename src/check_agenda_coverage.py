@@ -8,7 +8,7 @@
 
 הרצה:
     python check_agenda_coverage.py
-    python check_agenda_coverage.py --files twitter_natural_dataset.csv telegram_natural_dataset.csv ...
+    python check_agenda_coverage.py --files data/raw/twitter_natural_dataset.csv data/raw/telegram_natural_dataset.csv ...
 """
 import argparse
 import os
@@ -24,10 +24,10 @@ MIN_DOCS = 10  # ספי "נוכחות משמעותית" של אג'נדה בנר�
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--files", nargs="+", default=[
-        "twitter_natural_dataset.csv",
-        "telegram_natural_dataset.csv",
-        "gemini_natural_dataset.csv",
-        "gpt_natural_dataset.csv",
+        "data/raw/twitter_natural_dataset.csv",
+        "data/raw/telegram_natural_dataset.csv",
+        "data/raw/gemini_natural_dataset.csv",
+        "data/raw/gpt_natural_dataset.csv",
     ])
     ap.add_argument("--min-len", type=int, default=15)
     args = ap.parse_args()
@@ -82,8 +82,9 @@ def main():
     else:
         print(f"[OK] לכל הנרטיבים יש לפחות 10 קטגוריות אג'נדה עם {MIN_DOCS}+ מסמכים תואמים.")
 
-    counts.to_csv("agenda_coverage_counts.csv", encoding="utf-8-sig")
-    print("\n[i] טבלת ספירות מלאה נשמרה ב-agenda_coverage_counts.csv")
+    os.makedirs("reports", exist_ok=True)
+    counts.to_csv("reports/agenda_coverage_counts.csv", encoding="utf-8-sig")
+    print("\n[i] טבלת ספירות מלאה נשמרה ב-reports/agenda_coverage_counts.csv")
 
 
 if __name__ == "__main__":

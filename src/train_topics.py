@@ -8,10 +8,10 @@ from llm_topic_refiner import refine_topics_with_llm
 
 def build_and_save_topics():
     print("טוען את קבצי הנתונים...")
-    df_llm = pd.read_csv("sample_data/gemini_natural_dataset.csv")
-    df_little = pd.read_csv("sample_data/gpt_natural_dataset.csv")
-    df_twitter = pd.read_csv("sample_data/twitter_natural_dataset.csv")
-    df_telegram = pd.read_csv("sample_data/telegram_natural_dataset.csv")
+    df_llm = pd.read_csv("data/raw/gemini_natural_dataset.csv")
+    df_little = pd.read_csv("data/raw/gpt_natural_dataset.csv")
+    df_twitter = pd.read_csv("data/raw/twitter_natural_dataset.csv")
+    df_telegram = pd.read_csv("data/raw/telegram_natural_dataset.csv")
 
     # איחוד הקבצים
     full_data = pd.concat([df_llm, df_little, df_twitter, df_telegram], ignore_index=True)
@@ -23,7 +23,7 @@ def build_and_save_topics():
 
     print("שומר את המודל לתיקייה מקומית...")
     # שימוש בפורמט safetensors המומלץ והמאובטח לשמירת מודלים
-    topic_model.save("saved_topic_model", serialization="safetensors")
+    topic_model.save("models/saved_topic_model", serialization="safetensors")
 
     # שמירת משקלי המודל ישירות ל-Google Drive
     drive_save_path = "/content/drive/MyDrive/saved_topic_model"

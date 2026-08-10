@@ -44,7 +44,7 @@ class TopicAnalysisPipeline:
     def __init__(self):
         print("Loading pre-trained Topic Model...")
         # טעינת המודל המוכן מהתיקייה ששמרנו אליה קודם
-        self.topic_model = BERTopic.load("saved_topic_model")
+        self.topic_model = BERTopic.load("models/saved_topic_model")
         # תוויות שכוללו ע"י LLM (llm_topic_refiner.py), אם קיימות - אופציונלי,
         # לא משפיע על הסיווג עצמו, רק על פרשנות אנושית של הנושא.
         try:

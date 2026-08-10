@@ -152,7 +152,7 @@ def refine_topics_with_llm(topic_model, top_n_words=10, batch_size=15,
     return results
 
 
-def load_refined_labels(path="saved_topic_model/topics_llm_refined.json"):
+def load_refined_labels(path="models/saved_topic_model/topics_llm_refined.json"):
     """טוען את קובץ התוויות המשוכללות (אם קיים) כ-dict {topic_id(int): {...}}."""
     if not os.path.exists(path):
         return {}
@@ -165,5 +165,5 @@ if __name__ == "__main__":
     from bertopic import BERTopic
 
     print("טוען מודל BERTopic קיים מ-saved_topic_model...")
-    model = BERTopic.load("saved_topic_model")
+    model = BERTopic.load("models/saved_topic_model")
     refine_topics_with_llm(model)

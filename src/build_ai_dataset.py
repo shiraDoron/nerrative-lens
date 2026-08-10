@@ -60,7 +60,7 @@ def generate_samples_for_narrative(narrative, num_samples, model_id):
 
 
 def build_llm_dataset(total_samples_per_narrative=1200):
-    output_filename = "gemini_natural_dataset.csv"
+    output_filename = "data/raw/gemini_natural_dataset.csv"
 
     current_model = 'gemini-2.5-flash'
     fallback_model = 'gemini-flash-latest'

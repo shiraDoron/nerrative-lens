@@ -295,13 +295,13 @@ class NarrativeDetector(nn.Module):
 # --- סימולציה של ריצת המערכת ---
 if __name__ == "__main__":
     # טעינת נתוני המודל
-    with open("shared_vocab.json", "r", encoding="utf-8") as f:
+    with open("data/cache/shared_vocab.json", "r", encoding="utf-8") as f:
         shared_vocab = json.load(f)
 
     detector = NarrativeDetector(ner_vocab=shared_vocab, srl_vocab=shared_vocab)
-    detector.load_state_dict(torch.load("best_narrative_model_hybrid.pth"))
+    detector.load_state_dict(torch.load("models/best_narrative_model_hybrid.pth"))
 
-    loaded_topic_model = BERTopic.load("best_bertopic_model")
+    loaded_topic_model = BERTopic.load("models/best_bertopic_model")
     detector.stance_processor.topic_model = loaded_topic_model
     detector.eval()
 

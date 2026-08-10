@@ -2,7 +2,7 @@
 """
 ניתוח אג'נדות ומאפיינים לפי נרטיב
 =================================
-הסקריפט מקבל את דאטהסטי הנרטיבים (ברירת מחדל: twitter_natural_dataset.csv)
+הסקריפט מקבל את דאתהסטי הנרטיבים (ברירת מחדל: data/raw/twitter_natural_dataset.csv)
 ומפיק לכל נרטיב (ציוני, רוסי, אוקראיני וכו') את האג'נדות, הערכים והמאפיינים
 הרטוריים/סגנוניים שמאפיינים אותו - בלי שהתוויות האלה קיימות בדאטהסט.
 
@@ -25,7 +25,7 @@
 
 הרצה:
     python analyze_agendas.py
-    python analyze_agendas.py --files twitter_natural_dataset.csv telegram_natural_dataset.csv
+    python analyze_agendas.py --files data/raw/twitter_natural_dataset.csv data/raw/telegram_natural_dataset.csv
     python analyze_agendas.py --plot
 """
 
@@ -868,8 +868,8 @@ def main():
         pass
 
     ap = argparse.ArgumentParser(description="ניתוח אג'נדות ומאפיינים לפי נרטיב")
-    ap.add_argument("--files", nargs="+", default=["twitter_natural_dataset.csv"])
-    ap.add_argument("--out-prefix", default="narrative_agendas")
+    ap.add_argument("--files", nargs="+", default=["data/raw/twitter_natural_dataset.csv"])
+    ap.add_argument("--out-prefix", default="reports/narrative_agendas")
     ap.add_argument("--plot", action="store_true", help="שמירת מפות חום PNG")
     ap.add_argument("--min-len", type=int, default=15, help="אורך מינימלי בתווים")
     ap.add_argument("--auto-topics", type=int, default=0, metavar="N",
@@ -922,6 +922,7 @@ def main():
                           ideology_prof=ideology_prof, ideology_overall=ideology_overall)
 
     txt_path = f"{args.out_prefix}_report.txt"
+    os.makedirs(os.path.dirname(txt_path) or ".", exist_ok=True)
     with open(txt_path, "w", encoding="utf-8") as fh:
         fh.write(report)
     agenda_prof.round(2).to_csv(f"{args.out_prefix}_agendas.csv", encoding="utf-8-sig")

@@ -4,8 +4,8 @@ import time
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.edge.service import Service
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
 # הגדרת הנרטיבים והחשבונות שמשויכים אליהם
 NARRATIVES_ACCOUNTS = {
@@ -79,9 +79,9 @@ LABEL_MAP = {
 }
 
 def setup_driver():
-    options = webdriver.ChromeOptions()
+    options = webdriver.EdgeOptions()
     options.add_argument("--disable-notifications")
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()), options=options)
     return driver
 
 

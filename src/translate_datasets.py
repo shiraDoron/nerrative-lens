@@ -67,7 +67,7 @@ def translate_inplace_final(file_path):
 
 if __name__ == "__main__":
     # רשימת הקבצים המקוריים שלך
-    files = ['telegram_natural_dataset.csv', 'twitter_natural_dataset.csv']
+    files = ['data/raw/telegram_natural_dataset.csv', 'data/raw/twitter_natural_dataset.csv']
 
     print("מתחיל בתרגום חכם ובטוח (עברית, ערבית, רוסית -> אנגלית)...")
     for f in files:

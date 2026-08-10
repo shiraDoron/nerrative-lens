@@ -14,7 +14,7 @@ from config import NARRATIVES
 from fusion import NarrativeDetector
 
 # שם קובץ חדש לקובץ המשולב כדי לא לטעון בטעות את הקאש הישן
-FEATURES_CACHE_FILE = "cached_features_hybrid.pt"
+FEATURES_CACHE_FILE = "data/cache/cached_features_hybrid.pt"
 
 # מיפוי הנרטיבים לחישוב מדדים
 label_to_index = {narrative: i for i, narrative in enumerate(NARRATIVES)}
@@ -33,16 +33,16 @@ def extract_all(data, desc, detector):
 if __name__ == "__main__":
     print("Loading datasets...")
     # טעינת הדטה-סט של ג'מיני
-    df_llm = pd.read_csv("gemini_natural_dataset.csv")
+    df_llm = pd.read_csv("data/raw/gemini_natural_dataset.csv")
 
     # דטה-סט קטן של ג'י-פי-טי (580 משפטים)
-    df_little = pd.read_csv("gpt_natural_dataset.csv")
+    df_little = pd.read_csv("data/raw/gpt_natural_dataset.csv")
 
     # דטה-סט מטוויטר
-    df_twitter = pd.read_csv("twitter_natural_dataset.csv")
+    df_twitter = pd.read_csv("data/raw/twitter_natural_dataset.csv")
 
     # דטה-סט מטלגרם
-    df_telegram = pd.read_csv("telegram_natural_dataset.csv")
+    df_telegram = pd.read_csv("data/raw/telegram_natural_dataset.csv")
 
     # איחוד קבצי הנתונים
     df = pd.concat([df_llm, df_little, df_twitter, df_telegram], ignore_index=True)
@@ -73,7 +73,7 @@ if __name__ == "__main__":
     sorted_words = sorted(list(all_words_set))
     shared_vocab = {word: i for i, word in enumerate(sorted_words)}
 
-    with open("shared_vocab.json", "w", encoding="utf-8") as f:
+    with open("data/cache/shared_vocab.json", "w", encoding="utf-8") as f:
         json.dump(shared_vocab, f, ensure_ascii=False, indent=4)
 
     # אתחול המודל
@@ -174,7 +174,7 @@ if __name__ == "__main__":
         if avg_val_loss < best_val_loss:
             best_val_loss = avg_val_loss
             epochs_no_improve = 0
-            torch.save(detector.state_dict(), "best_narrative_model_hybrid.pth")
+            torch.save(detector.state_dict(), "models/best_narrative_model_hybrid.pth")
 
             # שמירת תוצאות ה-Validation הטובות ביותר להדפסה הסופית
             best_true_labels = epoch_true_labels.copy()
@@ -195,7 +195,7 @@ if __name__ == "__main__":
     print("=" * 60)
 
     # טעינת המודל הטוב ביותר שנשמר לפני החישוב הסופי (ליתר ביטחון)
-    detector.load_state_dict(torch.load("best_narrative_model_hybrid.pth"))
+    detector.load_state_dict(torch.load("models/best_narrative_model_hybrid.pth"))
     detector.eval()
 
     # חילוץ שמות הנרטיבים הרלוונטיים שנמצאו בסט האימות
