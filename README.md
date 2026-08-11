@@ -48,7 +48,15 @@ relative to the project root:
 ```bash
 python src/analyze_agendas.py
 python src/check_agenda_coverage.py
-python src/train.py
+python src/train.py                       # trains config.py's MODEL_TYPE (default: baseline_fusion)
+python src/train.py --model baseline_fusion  # existing NarrativeDetector (unchanged)
+python src/train.py --model sbert_only       # Baseline 1: frozen SBERT embedding -> MLP
+python src/train.py --model hybrid           # HybridNarrativeDetector (SBERT + engineered features)
+
+# Generalization splits (any --model works with any --split):
+python src/train.py --model hybrid --split random                                   # default: random train/val/test split
+python src/train.py --model hybrid --split leave_one_topic --held-out-topic 12      # Leave-One-Topic-Out (LOTO)
+python src/train.py --model hybrid --split leave_one_author --held-out-author IDF   # Leave-One-Author-Out (LOAO)
 python src/train_topics.py
 python src/build_twitter_dataset.py
 python src/build_telegram_dataset.py
@@ -83,7 +91,8 @@ The following are required only for the heavier training/feature-extraction pipe
 (`train.py`, `fusion.py`, `ner.py`, `srl.py`, `emotion.py`, `reliability.py`, `stance.py`,
 `train_topics.py`, `llm_topic_refiner.py`) and are intended to run in a Colab/GPU environment:
 `torch`, `transformers`, `spacy` (`en_core_web_trf`), `bertopic`, `scikit-learn`,
-`deep-translator`, `telethon`, `google-genai`.
+`deep-translator`, `telethon`, `google-genai`, `sentence-transformers` (used by
+`HybridNarrativeDetector` in `fusion.py`).
 
 ## Pipeline Overview
 
@@ -94,6 +103,9 @@ The following are required only for the heavier training/feature-extraction pipe
 3. **Training**: `train_topics.py` fits a BERTopic topic model; `train.py` extracts features
    (NER, SRL, emotion/agency, topic/stance, reliability) for every sample, fuses them via
    `fusion.py`'s `NarrativeDetector`, and trains the classifier with early stopping.
+   `train.py` can train any of three models (`--model baseline_fusion|sbert_only|hybrid`,
+   see "Model Comparison" below) using identical train/validation/test splits for a fair
+   research comparison.
 4. **Analysis**: `analyze_agendas.py` and `check_agenda_coverage.py` provide a lightweight,
    dependency-free (pandas/numpy only) profiling of each narrative's agendas, rhetoric,
    ideology, and per-account internal diversity — independent of the trained model.
@@ -111,6 +123,67 @@ narrative-oriented vector, which are combined by a learned weighted-sum fusion n
 
 The fusion network learns per-module importance weights, printed after training for
 interpretability.
+
+### Hybrid v1 (`HybridNarrativeDetector`)
+
+An additional model class in `fusion.py`, built as a first step toward a stronger,
+end-to-end architecture without discarding any of the existing engineered features.
+It concatenates a shared SBERT sentence embedding (`sentence-transformers/all-MiniLM-L6-v2`,
+frozen) with all the existing engineered feature vectors — NER, SRL, emotion/agency,
+topic/stance, reliability — plus two new lexicon-based feature vectors (agenda and
+ideology, reusing `AGENDA_PATTERNS`/`IDEOLOGY_PATTERNS` from `analyze_agendas.py` via the
+new `AgendaIdeologyFeatureExtractor`), then passes the combined vector through an MLP to
+predict the narrative.
+
+### Model Comparison (`train.py --model ...`)
+
+`train.py` can train and evaluate three models, selected via `--model` (or `config.py`'s
+`MODEL_TYPE`) — no manual code edits required:
+
+| `--model` value | Class | Description |
+|---|---|---|
+| `baseline_fusion` | `NarrativeDetector` | Existing linear-fusion model (unchanged) |
+| `sbert_only` | `SBERTOnlyDetector` | Baseline 1: frozen SBERT embedding → MLP only |
+| `hybrid` | `HybridNarrativeDetector` | Proposed Hybrid: SBERT + all engineered features → MLP |
+
+All three models are trained/evaluated on **identical train/validation/test splits**
+(`config.py`'s `VAL_SIZE`/`TEST_SIZE`, fixed `random_state=42`) for a fair comparison. Each
+model's checkpoint (`models/best_model_*.pth`) is selected by **validation Macro-F1** (not
+loss). Accuracy, Macro-F1, Macro-Precision and Macro-Recall for the validation and test splits
+of every run are accumulated in `reports/model_comparison_results.json`.
+
+Interpretability for the Hybrid model is intended to come from **ablation studies** (removing
+one feature group at a time and measuring the Macro-F1 drop) rather than learned fusion
+weights — this is scaffolded via `evaluate()`'s `features_labels` parameter but not yet
+implemented (see the "future extension points" comment block at the bottom of `train.py`).
+
+### Generalization evaluation (`--split ...`)
+
+Every dataset row is tagged with two provenance columns during loading (`load_raw_data()` in
+`train.py`): `dataset_source` (`gemini`/`gpt`/`twitter`/`telegram`) and `author_source` (the
+specific account/channel — for `twitter`/`telegram` this is the real `account` column already
+written by the scrapers; for the synthetic `gemini`/`gpt` datasets, which have no real per-row
+author, a placeholder value like `gemini_synthetic` is used instead). `--split` selects how
+train/validation/test are built from these:
+
+| `--split` value | Behavior | Extra flag required |
+|---|---|---|
+| `random` (default) | Ordinary random split (`config.py`'s `VAL_SIZE`/`TEST_SIZE`, `random_state=42`) | — |
+| `leave_one_topic` | All samples of one BERTopic topic id go entirely to test; rest split train/val | `--held-out-topic <topic_id>` |
+| `leave_one_author` | All samples of one account/channel (`author_source`) go entirely to test; rest split train/val | `--held-out-author <name>` |
+
+For the two specialized modes, `train.py` automatically runs `verify_no_leakage()` to assert
+the held-out topic/author never also appears in train or validation, and saves a
+`reports/split_summary_<model>_<run>.json` file with per-split narrative counts and distinct
+`dataset_source`/`author_source` counts. Cache (`data/cache/`) and checkpoint (`models/`) files
+are automatically namespaced per split mode + held-out value, so a `random`-split run never
+collides with a `leave_one_topic`/`leave_one_author` run of the same model.
+
+**Known limitation**: `leave_one_author` on `gemini`/`gpt` rows is really equivalent to holding
+out an entire synthetic dataset source, not a true test of generalizing away from one author's
+writing style, since those datasets have no genuine per-row author. `leave_one_topic` requires
+running the trained BERTopic model (`models/saved_topic_model/`) once over the full dataset to
+assign `topic_id` before splitting — a Colab-only, GPU-dependent step, not testable locally.
 
 ## Future Work
 
