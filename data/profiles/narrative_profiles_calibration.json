@@ -1,0 +1,1121 @@
+{
+  "Left-wing": {
+    "narrative": "Left-wing",
+    "n_documents": 8,
+    "observed_statistics": {
+      "relation_counts": {
+        "proposes_action": 2,
+        "uncertain": 1,
+        "protects": 1
+      },
+      "values_hit_prevalence_pct": {
+        "יציבות וסדר": 12.5,
+        "ביטחון והישרדות": 12.5
+      }
+    },
+    "inferred_interpretation": {
+      "main_actors": [
+        {
+          "entity": "we",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Gaza",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Israel",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Palestinians",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Hassanherzallah",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Middleeasteye",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "LA",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Jewish",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "United Kingdom",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Metropolitanpolice",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        }
+      ],
+      "relation_examples": {
+        "proposes_action": [
+          {
+            "source": "we",
+            "target": "need to make it easier to organize , not harder .",
+            "confidence": 0.55,
+            "evidence": "unions are the backbone of the middle class, we need to make it easier to organize, not harder.",
+            "candidate_relation": "proposes_action"
+          },
+          {
+            "source": "we",
+            "target": "need policies that protect them .",
+            "confidence": 0.55,
+            "evidence": "We need policies that protect them.",
+            "candidate_relation": "proposes_action"
+          }
+        ],
+        "uncertain": [
+          {
+            "source": "gentrification",
+            "target": "pushing out long - standing communities .",
+            "confidence": 0.35,
+            "evidence": "Seriously, gentrification is pushing out long-standing communities.",
+            "candidate_relation": "proposes_action"
+          }
+        ],
+        "protects": [
+          {
+            "source": "that",
+            "target": "them",
+            "confidence": 0.45,
+            "evidence": "We need policies that protect them.",
+            "candidate_relation": "protects"
+          }
+        ]
+      }
+    }
+  },
+  "Resistance": {
+    "narrative": "Resistance",
+    "n_documents": 8,
+    "observed_statistics": {
+      "relation_counts": {
+        "proposes_action": 1,
+        "opposes": 1
+      },
+      "values_hit_prevalence_pct": {}
+    },
+    "inferred_interpretation": {
+      "main_actors": [
+        {
+          "entity": "Gaza",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "United States",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Iran",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Trump",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 0.5,
+              "uncertain": 0.5
+            }
+          }
+        },
+        {
+          "entity": "Zionist",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Israel",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Yair Lapid",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Knesset",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Palestine",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Wallah",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        }
+      ],
+      "relation_examples": {
+        "proposes_action": [
+          {
+            "source": "United States",
+            "target": "know if they start a war , this time it will be a regional war .",
+            "confidence": 0.55,
+            "evidence": "The Americans should know if they start a war, this time it will be a regional war.",
+            "candidate_relation": "proposes_action"
+          }
+        ],
+        "opposes": [
+          {
+            "source": "they",
+            "target": "arrogance",
+            "confidence": 0.45,
+            "evidence": "Speaking \"out of religious and moral duty,\" they \"unequivocally condemned the Zionist arrogance\" and \"blind Zionist aggression driven by a false biblical narrative.\"",
+            "candidate_relation": "opposes"
+          }
+        ]
+      }
+    }
+  },
+  "Right-wing": {
+    "narrative": "Right-wing",
+    "n_documents": 8,
+    "observed_statistics": {
+      "relation_counts": {},
+      "values_hit_prevalence_pct": {
+        "ביטחון והישרדות": 25.0
+      }
+    },
+    "inferred_interpretation": {
+      "main_actors": [
+        {
+          "entity": "Mueller",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Trump",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 0.5,
+              "uncertain": 0.5
+            }
+          }
+        },
+        {
+          "entity": "Transportationsecurityadministration",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Democrats",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Bombshellwhistleblow",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Anti Trumpwitchhunters",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Job",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Doctorrecords",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Securityrules",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Al",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        }
+      ],
+      "relation_examples": {}
+    }
+  },
+  "Russian": {
+    "narrative": "Russian",
+    "n_documents": 8,
+    "observed_statistics": {
+      "relation_counts": {
+        "attacks": 1,
+        "uncertain": 2
+      },
+      "values_hit_prevalence_pct": {
+        "מסורת ומורשת": 12.5,
+        "ביטחון והישרדות": 25.0,
+        "סולידריות ואחריות קולקטיבית": 12.5,
+        "יציבות וסדר": 12.5
+      }
+    },
+    "inferred_interpretation": {
+      "main_actors": [
+        {
+          "entity": "we",
+          "observed": {
+            "mentions": 9,
+            "prevalence_pct": 112.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 0.333,
+              "uncertain": 0.667
+            }
+          }
+        },
+        {
+          "entity": "Russia",
+          "observed": {
+            "mentions": 6,
+            "prevalence_pct": 75.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "AFU",
+          "observed": {
+            "mentions": 4,
+            "prevalence_pct": 50.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Kharkov",
+          "observed": {
+            "mentions": 4,
+            "prevalence_pct": 50.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "United States",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 37.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Severgroupofforces",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 37.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 0.667,
+              "uncertain": 0.333
+            }
+          }
+        },
+        {
+          "entity": "Iran",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 37.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Ukraine",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Sumy",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "U S",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        }
+      ],
+      "relation_examples": {
+        "attacks": [
+          {
+            "source": "they",
+            "target": "countries",
+            "confidence": 0.45,
+            "evidence": "It's funny how they call us the aggressors when they've been bombing countries for decades.",
+            "candidate_relation": "attacks"
+          }
+        ],
+        "uncertain": [
+          {
+            "source": "they",
+            "target": "call us the aggressors when they 've been bombing countries for decades",
+            "confidence": 0.35,
+            "evidence": "It's funny how they call us the aggressors when they've been bombing countries for decades.",
+            "candidate_relation": "proposes_action"
+          },
+          {
+            "source": "️We",
+            "target": "wait for more specific data .",
+            "confidence": 0.35,
+            "evidence": "❗️We should wait for more specific data.",
+            "candidate_relation": "proposes_action"
+          }
+        ]
+      }
+    }
+  },
+  "Ukrainian": {
+    "narrative": "Ukrainian",
+    "n_documents": 8,
+    "observed_statistics": {
+      "relation_counts": {
+        "uncertain": 1,
+        "proposes_action": 1
+      },
+      "values_hit_prevalence_pct": {
+        "ביטחון והישרדות": 37.5
+      }
+    },
+    "inferred_interpretation": {
+      "main_actors": [
+        {
+          "entity": "Russia",
+          "observed": {
+            "mentions": 7,
+            "prevalence_pct": 87.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "we",
+          "observed": {
+            "mentions": 5,
+            "prevalence_pct": 62.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 0.8,
+              "uncertain": 0.2
+            }
+          }
+        },
+        {
+          "entity": "Ukraine",
+          "observed": {
+            "mentions": 4,
+            "prevalence_pct": 50.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "victim": 0.25,
+              "unknown": 0.5,
+              "uncertain": 0.25
+            }
+          }
+        },
+        {
+          "entity": "French",
+          "observed": {
+            "mentions": 4,
+            "prevalence_pct": 50.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Europeans",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 37.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Ramadan",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Ukrainianmuslims",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Crimeantatar",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Airforceoftheukrainianarmedforces",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Keir Starmer",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        }
+      ],
+      "relation_examples": {
+        "uncertain": [
+          {
+            "source": "officials",
+            "target": "insisted that Moscow agree that the Europeans should have a seat at the negotiating table .",
+            "confidence": 0.35,
+            "evidence": "According to the sources, French officials insisted that Moscow agree that the Europeans should have a seat at the negotiating table.",
+            "candidate_relation": "proposes_action"
+          }
+        ],
+        "proposes_action": [
+          {
+            "source": "Europeans",
+            "target": "have a seat at the negotiating table",
+            "confidence": 0.55,
+            "evidence": "According to the sources, French officials insisted that Moscow agree that the Europeans should have a seat at the negotiating table.",
+            "candidate_relation": "proposes_action"
+          }
+        ]
+      }
+    }
+  },
+  "Western": {
+    "narrative": "Western",
+    "n_documents": 8,
+    "observed_statistics": {
+      "relation_counts": {
+        "causes": 1,
+        "uncertain": 1,
+        "opposes": 1
+      },
+      "values_hit_prevalence_pct": {}
+    },
+    "inferred_interpretation": {
+      "main_actors": [
+        {
+          "entity": "we",
+          "observed": {
+            "mentions": 4,
+            "prevalence_pct": 50.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Russia",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 0.5,
+              "uncertain": 0.5
+            }
+          }
+        },
+        {
+          "entity": "Kazakh",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Kazakhstancralas",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Kazak",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "European",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Alexeinavalny",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Israel Iran",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Euronews",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Gaza",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        }
+      ],
+      "relation_examples": {
+        "causes": [
+          {
+            "source": "demand",
+            "target": "Kazakhstancralas",
+            "confidence": 0.5,
+            "evidence": "As demand for skilled workers grows in Kazakhstan, their story shows why craftsmanship still powers the country’s future.",
+            "candidate_relation": "causes"
+          }
+        ],
+        "uncertain": [
+          {
+            "source": "chief",
+            "target": "calls for renewed Gaza ceasefire amid escalation    🇬 🇱",
+            "confidence": 0.35,
+            "evidence": "🇵🇸🇮🇱EU foreign policy chief calls for renewed Gaza ceasefire amid escalation   🇬🇱",
+            "candidate_relation": "proposes_action"
+          }
+        ],
+        "opposes": [
+          {
+            "source": "PM",
+            "target": "visit",
+            "confidence": 0.45,
+            "evidence": "Greenland's PM slams US officials' visit as 'demonstration of power'",
+            "candidate_relation": "opposes"
+          }
+        ]
+      }
+    }
+  },
+  "Zionist": {
+    "narrative": "Zionist",
+    "n_documents": 8,
+    "observed_statistics": {
+      "relation_counts": {
+        "uncertain": 2
+      },
+      "values_hit_prevalence_pct": {
+        "יציבות וסדר": 12.5
+      }
+    },
+    "inferred_interpretation": {
+      "main_actors": [
+        {
+          "entity": "Iran",
+          "observed": {
+            "mentions": 6,
+            "prevalence_pct": 75.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "uncertain": 0.833,
+              "unknown": 0.167
+            }
+          }
+        },
+        {
+          "entity": "we",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 37.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "United States",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 0.5,
+              "uncertain": 0.5
+            }
+          }
+        },
+        {
+          "entity": "Israel",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 25.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "uncertain": 0.5,
+              "unknown": 0.5
+            }
+          }
+        },
+        {
+          "entity": "Hezbollah",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Ibrahimmuhammadghazal",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Badrunit",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Yellowline",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Gaza",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        },
+        {
+          "entity": "IDF",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 12.5
+          },
+          "inferred": {
+            "role_distribution": {
+              "unknown": 1.0
+            }
+          }
+        }
+      ],
+      "relation_examples": {
+        "uncertain": [
+          {
+            "source": "(unattributed)",
+            "target": "INTELLIGENCE REVEALS: BROTHER OF TERRORIST BEHIND U.S. SYNAGOGUE ATTACK WAS A HEZBOLLAH TERRORIST  Hezbollah commander I",
+            "confidence": 0.35,
+            "evidence": "INTELLIGENCE REVEALS: BROTHER OF TERRORIST BEHIND U.S. SYNAGOGUE ATTACK WAS A HEZBOLLAH TERRORIST  Hezbollah commander Ibrahim Muhammad Ghazali was responsible for managing weapons operations within a specialized branch of the Badr Unit.",
+            "candidate_relation": "blames"
+          },
+          {
+            "source": "(unattributed)",
+            "target": "The unit",
+            "confidence": 0.35,
+            "evidence": "The unit is responsible for launching",
+            "candidate_relation": "blames"
+          }
+        ]
+      }
+    }
+  }
+}

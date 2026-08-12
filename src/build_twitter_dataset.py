@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.edge.service import Service
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
-# הגדרת הנרטיבים והחשבונות שמשויכים אליהם
+# Definition of the narratives and the accounts associated with them
 NARRATIVES_ACCOUNTS = {
     "Zionist": [
         "Israel",
@@ -72,7 +72,7 @@ NARRATIVES_ACCOUNTS = {
     ],
 }
 
-# התאמת המדדים (אינדקס) לשמות הנרטיבים
+# Mapping the indices to the narrative names
 LABEL_MAP = {
     "Zionist": 0, "Resistance": 1, "Western": 2, "Russian": 3,
     "Ukrainian": 4, "Right-wing": 5, "Left-wing": 6
@@ -112,15 +112,15 @@ def scrape_twitter_data(target_tweets_per_account=200):
     try:
         print("Injecting auth token and bypassing login...")
 
-        # כניסה ראשונית לדומיין החדש
+        # Initial navigation to the new domain
         driver.get("https://x.com")
         time.sleep(3)
 
-        # שתילת העוגייה עם המפתח שלך - נקרא ממשתנה סביבה, אף פעם לא מוטבע בקוד.
+        # Injecting the cookie with your key - read from an environment variable, never hardcoded.
         _auth_token = os.environ.get("TWITTER_AUTH_TOKEN")
         if not _auth_token:
             raise RuntimeError(
-                "חסר משתנה סביבה TWITTER_AUTH_TOKEN. הגדר: "
+                "Missing TWITTER_AUTH_TOKEN environment variable. Set it with: "
                 "$env:TWITTER_AUTH_TOKEN = '<your-auth-token-cookie>' (PowerShell)."
             )
         driver.add_cookie({
@@ -129,7 +129,7 @@ def scrape_twitter_data(target_tweets_per_account=200):
             'domain': '.x.com'
         })
 
-        # רענון העמוד כדי שההתחברות תיכנס לתוקף
+        # Refresh the page so the login takes effect
         driver.get("https://x.com")
         time.sleep(5)
         print("Authentication successful! Starting data collection...")
@@ -144,7 +144,7 @@ def scrape_twitter_data(target_tweets_per_account=200):
 
                 print(f"Scraping account: @{account} for narrative: {narrative}...")
 
-                # ניווט לפרופיל עם הכתובת החדשה
+                # Navigate to the profile with the new URL
                 driver.get(f"https://x.com/{account}")
                 time.sleep(30)
 

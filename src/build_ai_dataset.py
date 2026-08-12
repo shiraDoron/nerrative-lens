@@ -7,12 +7,12 @@ from google.genai import types
 from google.genai.errors import APIError
 from config import NARRATIVES
 
-# אתחול הלקוח עם המפתח שלך - נקרא ממשתנה סביבה GEMINI_API_KEY, אף פעם לא מוטבע בקוד.
+# Initialize the client with your key - read from the GEMINI_API_KEY environment variable, never hardcoded.
 _GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 if not _GEMINI_API_KEY:
     raise RuntimeError(
-        "חסרה משתנת סביבה GEMINI_API_KEY. הגדר: "
-        "$env:GEMINI_API_KEY = '<your-key>' (PowerShell) לפני הרצת הסקריפט."
+        "Missing GEMINI_API_KEY environment variable. Set it with: "
+        "$env:GEMINI_API_KEY = '<your-key>' (PowerShell) before running the script."
     )
 client = genai.Client(api_key=_GEMINI_API_KEY)
 
@@ -23,7 +23,7 @@ Include natural imperfections and conversational fillers to make it sound like r
 Respond ONLY with a valid JSON array of objects.
 """
 
-# הוספת מילון ההקשרים המדויק שימנע מהמודל להתבלבל
+# Precise context dictionary added to prevent the model from getting confused
 NARRATIVE_CONTEXTS = {
     "Zionist": "The Israeli/Zionist narrative, focusing on the historical right to the Jewish homeland, self-defense against terrorism, the resilience of the IDF, and the survival of the democratic State of Israel.",
     "Western": "The Western democratic narrative, focusing on upholding the global rules-based order, NATO alliances, human rights, free markets, and defending against authoritarian regimes.",
@@ -36,10 +36,10 @@ NARRATIVE_CONTEXTS = {
 
 
 def generate_samples_for_narrative(narrative, num_samples, model_id):
-    # משיכת ההקשר הספציפי למניעת אי-הבנות
+    # Fetch the specific context to prevent misunderstandings
     context = NARRATIVE_CONTEXTS.get(narrative, "")
 
-    # בניית הפרומפט עם ההקשר המדויק
+    # Build the prompt with the precise context
     user_prompt = (
         f"Generate exactly {num_samples} distinct sentences for the '{narrative}' narrative.\n"
         f"Context and themes to focus on: {context}\n"
@@ -97,7 +97,7 @@ def build_llm_dataset(total_samples_per_narrative=1200):
                     writer = csv.writer(f)
                     for item in batch:
                         if isinstance(item, dict) and "text" in item:
-                            # ניקוי מהיר של ירידות שורה כדי לא לשבור את ה-CSV
+                            # Quick cleanup of line breaks so they don't break the CSV
                             clean_text = item["text"].replace("\n", " ").replace("\r", "")
                             writer.writerow([clean_text, label_idx, narrative])
                             samples_collected += 1

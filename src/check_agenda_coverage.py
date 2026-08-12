@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-בדיקת כיסוי אג'נדות ב-DB
+Agenda coverage check against the dataset
 =========================
-בודק, לכל נרטיב, כמה מתוך 16 קטגוריות האג'נדה (AGENDA_LEXICON ב-analyze_agendas.py)
-מופיעות בפועל בדאטהסטים (לפחות מסמך אחד תואם), וכמה מהן מופיעות בנפח משמעותי
-(לפחות MIN_DOCS מסמכים תואמים). מדגיש נרטיבים שלא מגיעים ל-10 קטגוריות.
+Checks, for each narrative, how many of the 16 agenda categories (AGENDA_LEXICON in
+analyze_agendas.py) actually appear in the datasets (at least one matching document),
+and how many appear in significant volume (at least MIN_DOCS matching documents).
+Highlights narratives that don't reach 10 categories.
 
-הרצה:
+Usage:
     python check_agenda_coverage.py
     python check_agenda_coverage.py --files data/raw/twitter_natural_dataset.csv data/raw/telegram_natural_dataset.csv ...
 """
@@ -18,7 +19,7 @@ import pandas as pd
 
 from analyze_agendas import AGENDA_PATTERNS, clean_text
 
-MIN_DOCS = 10  # ספי "נוכחות משמעותית" של אג'נדה בנרטיב
+MIN_DOCS = 10  # threshold for "significant presence" of an agenda in a narrative
 
 
 def main():
@@ -35,7 +36,7 @@ def main():
     frames = []
     for f in args.files:
         if not os.path.exists(f):
-            print(f"[!] קובץ לא נמצא, מדלג: {f}")
+            print(f"[!] File not found, skipping: {f}")
             continue
         d = pd.read_csv(f)
         d["source_file"] = os.path.basename(f)
@@ -46,18 +47,18 @@ def main():
     df["clean"] = df["text"].apply(clean_text)
     df = df[df["clean"].str.len() >= args.min_len]
     df = df.drop_duplicates(subset=["clean"]).reset_index(drop=True)
-    print(f"[i] סה\"כ {len(df)} טקסטים ייחודיים מתוך {len(args.files)} קבצים.\n")
+    print(f"[i] Total {len(df)} unique texts out of {len(args.files)} files.\n")
 
-    # ספירת מסמכים לכל (נרטיב, קטגוריה)
+    # Count documents for each (narrative, category)
     hit_frames = {}
     for cat, pat in AGENDA_PATTERNS.items():
         hit_frames[cat] = df["clean"].apply(lambda s: bool(pat.search(s)))
     hits = pd.DataFrame(hit_frames, index=df.index)
-    counts = hits.groupby(df["narrative_name"]).sum().astype(int)  # ספירת מסמכים, לא %
+    counts = hits.groupby(df["narrative_name"]).sum().astype(int)  # document count, not %
 
     total_docs = df.groupby("narrative_name").size()
 
-    print(f"{'נרטיב':<15}{'טקסטים':>9}{'קטגוריות עם >=1 מסמך':>24}{'קטגוריות עם >=' + str(MIN_DOCS) + ' מסמכים':>26}")
+    print(f"{'Narrative':<15}{'Texts':>9}{'Categories with >=1 doc':>24}{'Categories with >=' + str(MIN_DOCS) + ' docs':>26}")
     print("-" * 80)
     problems = []
     for nar in counts.index:
@@ -66,25 +67,25 @@ def main():
         n_min = int((row >= MIN_DOCS).sum())
         flag = ""
         if n_min < 10:
-            flag = "  <-- פחות מ-10 אג'נדות עם נוכחות משמעותית!"
+            flag = "  <-- fewer than 10 agendas with significant presence!"
             problems.append((nar, n_min))
         print(f"{nar:<15}{total_docs[nar]:>9}{n_any:>24}{n_min:>26}{flag}")
 
     print()
     if problems:
-        print("[!] נרטיבים שדורשים תשומת לב (פחות מ-10 אג'נדות עם >= %d מסמכים):" % MIN_DOCS)
+        print("[!] Narratives that need attention (fewer than 10 agendas with >= %d docs):" % MIN_DOCS)
         for nar, n_min in problems:
             weak = counts.loc[nar].sort_values()
             weak_cats = weak[weak < MIN_DOCS]
-            print(f"\n  {nar} ({n_min}/16 עומדות בסף):")
+            print(f"\n  {nar} ({n_min}/16 meet the threshold):")
             for cat, c in weak_cats.items():
-                print(f"      • {cat:<38} {c} מסמכים")
+                print(f"      • {cat:<38} {c} docs")
     else:
-        print(f"[OK] לכל הנרטיבים יש לפחות 10 קטגוריות אג'נדה עם {MIN_DOCS}+ מסמכים תואמים.")
+        print(f"[OK] All narratives have at least 10 agenda categories with {MIN_DOCS}+ matching docs.")
 
     os.makedirs("reports", exist_ok=True)
     counts.to_csv("reports/agenda_coverage_counts.csv", encoding="utf-8-sig")
-    print("\n[i] טבלת ספירות מלאה נשמרה ב-reports/agenda_coverage_counts.csv")
+    print("\n[i] Full counts table saved to reports/agenda_coverage_counts.csv")
 
 
 if __name__ == "__main__":

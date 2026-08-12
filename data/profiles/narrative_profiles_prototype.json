@@ -1,0 +1,1383 @@
+{
+  "Left-wing": {
+    "narrative": "Left-wing",
+    "n_documents": 25,
+    "observed_statistics": {
+      "relation_counts": {
+        "proposes_action": 3,
+        "causes": 5,
+        "protects": 1
+      },
+      "values_hit_prevalence_pct": {
+        "יציבות וסדר": 4.0,
+        "ביטחון והישרדות": 16.0,
+        "סולידריות ואחריות קולקטיבית": 12.0
+      }
+    },
+    "inferred_interpretation": {
+      "main_actors": [
+        {
+          "entity": "Israel",
+          "observed": {
+            "mentions": 8,
+            "prevalence_pct": 32.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 0.75,
+              "hero": 0.125,
+              "victim": 0.125
+            }
+          }
+        },
+        {
+          "entity": "United States",
+          "observed": {
+            "mentions": 8,
+            "prevalence_pct": 32.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 0.625,
+              "victim": 0.25,
+              "aggressor": 0.125
+            }
+          }
+        },
+        {
+          "entity": "Gaza",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Turkish",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Turkey",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Trump",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "victim": 0.5,
+              "neutral": 0.5
+            }
+          }
+        },
+        {
+          "entity": "Ankara",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Palestinians",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 4.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Hassanherzallah",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 4.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Middleeasteye",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 4.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        }
+      ],
+      "relation_examples": {
+        "proposes_action": [
+          {
+            "source": "we",
+            "target": "need to make it easier to organize , not harder .",
+            "confidence": 0.35,
+            "evidence": "unions are the backbone of the middle class, we need to make it easier to organize, not harder."
+          },
+          {
+            "source": "gentrification",
+            "target": "pushing out long - standing communities .",
+            "confidence": 0.35,
+            "evidence": "Seriously, gentrification is pushing out long-standing communities."
+          },
+          {
+            "source": "We",
+            "target": "need policies that protect them .",
+            "confidence": 0.35,
+            "evidence": "We need policies that protect them."
+          }
+        ],
+        "causes": [
+          {
+            "source": "ceasefire",
+            "target": "I",
+            "confidence": 0.5,
+            "evidence": "🗞Since the Gaza 'ceasefire' was announced, I have wondered what this word actually means."
+          },
+          {
+            "source": "industry",
+            "target": "aggression",
+            "confidence": 0.5,
+            "evidence": "\"As the weapons industry celebrates and polls show renewed public optimism, Israel's aggression across the region reveals an addiction to violence that no military victory can cure\"  ✍️ Opinion by Antony Loewenstein"
+          },
+          {
+            "source": "the Biden administration’s policy of arming and funding Israel’s genocide in Gaza, according to a report by American new",
+            "target": "An internal autopsy by the US Democratic party found Kamala Harris lost significant support in the 2024 election",
+            "confidence": 0.4,
+            "evidence": "An internal autopsy by the US Democratic party found Kamala Harris lost significant support in the 2024 election because of the Biden administration’s policy of arming and funding Israel’s genocide in Gaza, according to a report by American news website Axios.  The autopsy, which"
+          },
+          {
+            "source": "frustration",
+            "target": "voters",
+            "confidence": 0.5,
+            "evidence": "He added that Trump voters are turning against Israel as frustration grows over Washington’s continued alignment with the Israeli government's controversial policies."
+          },
+          {
+            "source": "Turkey",
+            "target": "Ankara",
+            "confidence": 0.5,
+            "evidence": "One Turkish official familiar with the matter said Ankara had decided to more closely monitor transit exports of these products because Turkey does not want to become a hub for illicit arms trading."
+          }
+        ],
+        "protects": [
+          {
+            "source": "that",
+            "target": "them",
+            "confidence": 0.45,
+            "evidence": "We need policies that protect them."
+          }
+        ]
+      }
+    }
+  },
+  "Resistance": {
+    "narrative": "Resistance",
+    "n_documents": 25,
+    "observed_statistics": {
+      "relation_counts": {
+        "proposes_action": 3,
+        "opposes": 2,
+        "protects": 1
+      },
+      "values_hit_prevalence_pct": {
+        "סולידריות ואחריות קולקטיבית": 8.0,
+        "ביטחון והישרדות": 8.0
+      }
+    },
+    "inferred_interpretation": {
+      "main_actors": [
+        {
+          "entity": "Israel",
+          "observed": {
+            "mentions": 12,
+            "prevalence_pct": 48.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "United States",
+          "observed": {
+            "mentions": 10,
+            "prevalence_pct": 40.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Iran",
+          "observed": {
+            "mentions": 6,
+            "prevalence_pct": 24.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Palestinians",
+          "observed": {
+            "mentions": 4,
+            "prevalence_pct": 16.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Gaza",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Trump",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 0.5,
+              "aggressor": 0.5
+            }
+          }
+        },
+        {
+          "entity": "Iraq",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Zionist",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Shahrekord",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Presstv",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        }
+      ],
+      "relation_examples": {
+        "proposes_action": [
+          {
+            "source": "United States",
+            "target": "know if they start a war , this time it will be a regional war .",
+            "confidence": 0.55,
+            "evidence": "The Americans should know if they start a war, this time it will be a regional war."
+          },
+          {
+            "source": "They",
+            "target": "call us ' terrorists , ' but who really destabilized the entire region ?",
+            "confidence": 0.35,
+            "evidence": "They call us 'terrorists,' but who really destabilized the entire region?"
+          },
+          {
+            "source": "soldiers",
+            "target": "defend Israel ? !",
+            "confidence": 0.35,
+            "evidence": "Why should our soldiers defend Israel?!"
+          }
+        ],
+        "opposes": [
+          {
+            "source": "they",
+            "target": "arrogance",
+            "confidence": 0.45,
+            "evidence": "Speaking \"out of religious and moral duty,\" they \"unequivocally condemned the Zionist arrogance\" and \"blind Zionist aggression driven by a false biblical narrative.\""
+          },
+          {
+            "source": "We",
+            "target": "them",
+            "confidence": 0.45,
+            "evidence": "We reject them."
+          }
+        ],
+        "protects": [
+          {
+            "source": "soldiers",
+            "target": "Israel",
+            "confidence": 0.45,
+            "evidence": "Why should our soldiers defend Israel?!"
+          }
+        ]
+      }
+    }
+  },
+  "Right-wing": {
+    "narrative": "Right-wing",
+    "n_documents": 25,
+    "observed_statistics": {
+      "relation_counts": {
+        "proposes_action": 3,
+        "causes": 1,
+        "blames": 1
+      },
+      "values_hit_prevalence_pct": {
+        "ביטחון והישרדות": 24.0,
+        "ריבונות וזהות לאומית/קולקטיבית": 8.0
+      }
+    },
+    "inferred_interpretation": {
+      "main_actors": [
+        {
+          "entity": "Trump",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 0.667,
+              "hero": 0.333
+            }
+          }
+        },
+        {
+          "entity": "Mueller",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "United States",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "ICE",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Jeffreyepstein",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "hero": 0.5,
+              "neutral": 0.5
+            }
+          }
+        },
+        {
+          "entity": "N",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Transportationsecurityadministration",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 4.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Democrats",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 4.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Bombshellwhistleblow",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 4.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Anti",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 4.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        }
+      ],
+      "relation_examples": {
+        "proposes_action": [
+          {
+            "source": "%",
+            "target": "called in sick on Tuesday as the Democrats ' partial government shutdown continued .",
+            "confidence": 0.35,
+            "evidence": "Nearly 10% of Transportation Security Administration workers reportedly called in sick on Tuesday as the Democrats' partial government shutdown continued."
+          },
+          {
+            "source": "Rebeccadow",
+            "target": "calling for a broader investigation into activities linked to late financier and sex offender Jeffrey Epstein 's Zorro R",
+            "confidence": 0.55,
+            "evidence": "New Mexico state Reps. Rebecca Dow and Stefani Lord are calling for a broader investigation into activities linked to late financier and sex offender Jeffrey Epstein's Zorro Ranch, urging the state's Truth Commission to examine not only individual misconduct but also systemic failures."
+          },
+          {
+            "source": "Merit",
+            "target": "rule .",
+            "confidence": 0.35,
+            "evidence": "Merit should always rule."
+          }
+        ],
+        "causes": [
+          {
+            "source": "shutdown",
+            "target": "%",
+            "confidence": 0.5,
+            "evidence": "Nearly 10% of Transportation Security Administration workers reportedly called in sick on Tuesday as the Democrats' partial government shutdown continued."
+          }
+        ],
+        "blames": [
+          {
+            "source": "(unattributed)",
+            "target": "The government",
+            "confidence": 0.35,
+            "evidence": "The government was responsible for its decisions, for better or for worse."
+          }
+        ]
+      }
+    }
+  },
+  "Russian": {
+    "narrative": "Russian",
+    "n_documents": 25,
+    "observed_statistics": {
+      "relation_counts": {
+        "attacks": 1,
+        "proposes_action": 4,
+        "causes": 1
+      },
+      "values_hit_prevalence_pct": {
+        "מסורת ומורשת": 4.0,
+        "ביטחון והישרדות": 12.0,
+        "סולידריות ואחריות קולקטיבית": 4.0,
+        "יציבות וסדר": 8.0,
+        "זכויות אדם וכבוד האדם": 4.0,
+        "שוויון וצדק": 4.0
+      }
+    },
+    "inferred_interpretation": {
+      "main_actors": [
+        {
+          "entity": "Russia",
+          "observed": {
+            "mentions": 9,
+            "prevalence_pct": 36.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Iran",
+          "observed": {
+            "mentions": 7,
+            "prevalence_pct": 28.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Ukraine",
+          "observed": {
+            "mentions": 6,
+            "prevalence_pct": 24.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "U",
+          "observed": {
+            "mentions": 5,
+            "prevalence_pct": 20.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "United States",
+          "observed": {
+            "mentions": 4,
+            "prevalence_pct": 16.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "AFU",
+          "observed": {
+            "mentions": 4,
+            "prevalence_pct": 16.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Kharkov",
+          "observed": {
+            "mentions": 4,
+            "prevalence_pct": 16.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Russiandefenceministry",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Severgroupofforces",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 0.667,
+              "hero": 0.333
+            }
+          }
+        },
+        {
+          "entity": "West",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        }
+      ],
+      "relation_examples": {
+        "attacks": [
+          {
+            "source": "they",
+            "target": "countries",
+            "confidence": 0.45,
+            "evidence": "It's funny how they call us the aggressors when they've been bombing countries for decades."
+          }
+        ],
+        "proposes_action": [
+          {
+            "source": "they",
+            "target": "call us the aggressors when they 've been bombing countries for decades",
+            "confidence": 0.35,
+            "evidence": "It's funny how they call us the aggressors when they've been bombing countries for decades."
+          },
+          {
+            "source": "️We",
+            "target": "wait for more specific data .",
+            "confidence": 0.35,
+            "evidence": "❗️We should wait for more specific data."
+          },
+          {
+            "source": "we",
+            "target": "address not only the military & diplomatic dimensions of the Ukrainian crisis , but also the information environment tha",
+            "confidence": 0.35,
+            "evidence": "#Evstigneeva: If we are serious about restoring stability in Europe & preventing further escalation, we must address not only the military & diplomatic dimensions of the Ukrainian crisis, but also the information environment that frames them."
+          },
+          {
+            "source": "nation",
+            "target": "have the right to dictate others live or how govern themselves .",
+            "confidence": 0.35,
+            "evidence": "No single nation should have the right to dictate how others live or govern themselves."
+          }
+        ],
+        "causes": [
+          {
+            "source": "she",
+            "target": "Israel",
+            "confidence": 0.5,
+            "evidence": "As she seeks cover, Israel strikes again, in what appears to be a double-tap strike."
+          }
+        ]
+      }
+    }
+  },
+  "Ukrainian": {
+    "narrative": "Ukrainian",
+    "n_documents": 25,
+    "observed_statistics": {
+      "relation_counts": {
+        "proposes_action": 6,
+        "causes": 7,
+        "attacks": 2
+      },
+      "values_hit_prevalence_pct": {
+        "ביטחון והישרדות": 24.0,
+        "ריבונות וזהות לאומית/קולקטיבית": 8.0,
+        "סולידריות ואחריות קולקטיבית": 4.0,
+        "יציבות וסדר": 4.0
+      }
+    },
+    "inferred_interpretation": {
+      "main_actors": [
+        {
+          "entity": "Ukraine",
+          "observed": {
+            "mentions": 25,
+            "prevalence_pct": 100.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "victim": 0.04,
+              "neutral": 0.84,
+              "hero": 0.12
+            }
+          }
+        },
+        {
+          "entity": "Russia",
+          "observed": {
+            "mentions": 19,
+            "prevalence_pct": 76.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "United States",
+          "observed": {
+            "mentions": 8,
+            "prevalence_pct": 32.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 0.875,
+              "aggressor": 0.125
+            }
+          }
+        },
+        {
+          "entity": "French",
+          "observed": {
+            "mentions": 4,
+            "prevalence_pct": 16.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "WHO",
+          "observed": {
+            "mentions": 4,
+            "prevalence_pct": 16.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Volodymyr Zelensky",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Europeans",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Iran",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 0.667,
+              "hero": 0.333
+            }
+          }
+        },
+        {
+          "entity": "Sumy",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "victim": 0.333,
+              "neutral": 0.333,
+              "aggressor": 0.333
+            }
+          }
+        },
+        {
+          "entity": "Rivne",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "aggressor": 0.333,
+              "neutral": 0.667
+            }
+          }
+        }
+      ],
+      "relation_examples": {
+        "proposes_action": [
+          {
+            "source": "officials",
+            "target": "insisted that Moscow agree that the Europeans should have a seat at the negotiating table .",
+            "confidence": 0.35,
+            "evidence": "According to the sources, French officials insisted that Moscow agree that the Europeans should have a seat at the negotiating table."
+          },
+          {
+            "source": "Europeans",
+            "target": "have a seat at the negotiating table",
+            "confidence": 0.55,
+            "evidence": "According to the sources, French officials insisted that Moscow agree that the Europeans should have a seat at the negotiating table."
+          },
+          {
+            "source": "people",
+            "target": "take to protect themselves",
+            "confidence": 0.35,
+            "evidence": "WHO is retraining its staff on how to respond to a nuclear incident, including advising officials on public health risks and what steps people should take to protect themselves."
+          },
+          {
+            "source": "they",
+            "target": "demanded $ 620,000 from the head of a monopolist company in the amber business",
+            "confidence": 0.35,
+            "evidence": "Investigators claim that in the Rivne region they demanded $620,000 from the head of a monopolist company in the amber business."
+          },
+          {
+            "source": "United States",
+            "target": "needs a larger quantity",
+            "confidence": 0.55,
+            "evidence": "In peacetime, if the US needs a larger quantity, it will have first priority for the entire volume."
+          }
+        ],
+        "causes": [
+          {
+            "source": "Russian shelling of the village of Maidan",
+            "target": "🔹 In Donetsk region, a 63-year-old local woman died",
+            "confidence": 0.4,
+            "evidence": "🔹 In Donetsk region, a 63-year-old local woman died as a result of Russian shelling of the village of Maidan."
+          },
+          {
+            "source": "the strike of the Russian Federation on Mykolaivka",
+            "target": "A man was injured",
+            "confidence": 0.4,
+            "evidence": "A man was injured due to the strike of the Russian Federation on Mykolaivka."
+          },
+          {
+            "source": "the Russian attack on a car in the Mykolaiv community in the Sumy region",
+            "target": "One more man was injured",
+            "confidence": 0.4,
+            "evidence": "One more man was injured as a result of the Russian attack on a car in the Mykolaiv community in the Sumy region."
+          },
+          {
+            "source": "Russian shelling of the Dnipro district",
+            "target": "🔹 In Kherson, a man died at his workplace",
+            "confidence": 0.4,
+            "evidence": "🔹 In Kherson, a man died at his workplace due to Russian shelling of the Dnipro district."
+          },
+          {
+            "source": "situation",
+            "target": "they",
+            "confidence": 0.5,
+            "evidence": "Ukrainian military intelligence chief Kyrylo Budanov addressed Russian soldiers in a video on May 22, urging them to surrender if they do not want to die because the situation on… https://t.co/dergWNtPjf"
+          }
+        ],
+        "attacks": [
+          {
+            "source": "troops",
+            "target": "Sumy",
+            "confidence": 0.45,
+            "evidence": "🔹 Russian troops attacked Sumy with a drone - one person was injured."
+          },
+          {
+            "source": "United States",
+            "target": "us",
+            "confidence": 0.45,
+            "evidence": "\"The Americans attacked us several times."
+          }
+        ]
+      }
+    }
+  },
+  "Western": {
+    "narrative": "Western",
+    "n_documents": 25,
+    "observed_statistics": {
+      "relation_counts": {
+        "causes": 1,
+        "proposes_action": 4,
+        "opposes": 1,
+        "attacks": 2
+      },
+      "values_hit_prevalence_pct": {
+        "ביטחון והישרדות": 12.0,
+        "יציבות וסדר": 16.0,
+        "סולידריות ואחריות קולקטיבית": 4.0,
+        "זכויות אדם וכבוד האדם": 4.0
+      }
+    },
+    "inferred_interpretation": {
+      "main_actors": [
+        {
+          "entity": "Ukraine",
+          "observed": {
+            "mentions": 10,
+            "prevalence_pct": 40.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 0.7,
+              "hero": 0.3
+            }
+          }
+        },
+        {
+          "entity": "Russia",
+          "observed": {
+            "mentions": 6,
+            "prevalence_pct": 24.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 0.667,
+              "aggressor": 0.167,
+              "hero": 0.167
+            }
+          }
+        },
+        {
+          "entity": "United States",
+          "observed": {
+            "mentions": 4,
+            "prevalence_pct": 16.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 0.5,
+              "hero": 0.5
+            }
+          }
+        },
+        {
+          "entity": "Iran",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "NATO",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "hero": 0.667,
+              "neutral": 0.333
+            }
+          }
+        },
+        {
+          "entity": "Jordan",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Kazakh",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 4.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Kazakhstancralas",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 4.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Kazak",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 4.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "European",
+          "observed": {
+            "mentions": 1,
+            "prevalence_pct": 4.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        }
+      ],
+      "relation_examples": {
+        "causes": [
+          {
+            "source": "demand",
+            "target": "Kazakhstancralas",
+            "confidence": 0.5,
+            "evidence": "As demand for skilled workers grows in Kazakhstan, their story shows why craftsmanship still powers the country’s future."
+          }
+        ],
+        "proposes_action": [
+          {
+            "source": "chief",
+            "target": "calls for renewed Gaza ceasefire amid escalation    🇬 🇱",
+            "confidence": 0.35,
+            "evidence": "🇵🇸🇮🇱EU foreign policy chief calls for renewed Gaza ceasefire amid escalation   🇬🇱"
+          },
+          {
+            "source": "We",
+            "target": "need to work together to keep our 1bn",
+            "confidence": 0.35,
+            "evidence": "We all need to work together to keep our 1bn"
+          },
+          {
+            "source": "We",
+            "target": "ensure that the future is theirs to claim and shape .",
+            "confidence": 0.35,
+            "evidence": "We must ensure that the future is theirs to claim and shape."
+          },
+          {
+            "source": "we",
+            "target": "need to lead on",
+            "confidence": 0.35,
+            "evidence": "Environmental protection is a global responsibility that we need to lead on."
+          }
+        ],
+        "opposes": [
+          {
+            "source": "PM",
+            "target": "visit",
+            "confidence": 0.45,
+            "evidence": "Greenland's PM slams US officials' visit as 'demonstration of power'"
+          }
+        ],
+        "attacks": [
+          {
+            "source": "bombs",
+            "target": "building",
+            "confidence": 0.45,
+            "evidence": "Overnight, Russian glide bombs struck a building in the eastern Ukrainian city of Kharkiv, wounding more than 20, while drones struck the southern city of Odessa, killing one person and injuring nine, officials said."
+          },
+          {
+            "source": "drones",
+            "target": "city",
+            "confidence": 0.45,
+            "evidence": "Overnight, Russian glide bombs struck a building in the eastern Ukrainian city of Kharkiv, wounding more than 20, while drones struck the southern city of Odessa, killing one person and injuring nine, officials said."
+          }
+        ]
+      }
+    }
+  },
+  "Zionist": {
+    "narrative": "Zionist",
+    "n_documents": 25,
+    "observed_statistics": {
+      "relation_counts": {
+        "blames": 2,
+        "proposes_action": 2,
+        "protects": 1
+      },
+      "values_hit_prevalence_pct": {
+        "יציבות וסדר": 4.0,
+        "סולידריות ואחריות קולקטיבית": 4.0,
+        "ביטחון והישרדות": 16.0,
+        "מסורת ומורשת": 4.0
+      }
+    },
+    "inferred_interpretation": {
+      "main_actors": [
+        {
+          "entity": "Israel",
+          "observed": {
+            "mentions": 13,
+            "prevalence_pct": 52.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "aggressor": 0.231,
+              "neutral": 0.462,
+              "hero": 0.231,
+              "victim": 0.077
+            }
+          }
+        },
+        {
+          "entity": "Iran",
+          "observed": {
+            "mentions": 12,
+            "prevalence_pct": 48.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "aggressor": 0.417,
+              "victim": 0.333,
+              "neutral": 0.25
+            }
+          }
+        },
+        {
+          "entity": "Ra",
+          "observed": {
+            "mentions": 6,
+            "prevalence_pct": 24.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "hero": 0.5,
+              "neutral": 0.5
+            }
+          }
+        },
+        {
+          "entity": "United States",
+          "observed": {
+            "mentions": 4,
+            "prevalence_pct": 16.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 0.5,
+              "aggressor": 0.5
+            }
+          }
+        },
+        {
+          "entity": "Gaza",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 0.333,
+              "hero": 0.333,
+              "victim": 0.333
+            }
+          }
+        },
+        {
+          "entity": "Shlomo Mansour",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "hero": 0.333,
+              "neutral": 0.333,
+              "victim": 0.333
+            }
+          }
+        },
+        {
+          "entity": "Shlomo",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "David",
+          "observed": {
+            "mentions": 3,
+            "prevalence_pct": 12.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "IDF",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        },
+        {
+          "entity": "Hamas",
+          "observed": {
+            "mentions": 2,
+            "prevalence_pct": 8.0
+          },
+          "inferred": {
+            "role_distribution": {
+              "neutral": 1.0
+            }
+          }
+        }
+      ],
+      "relation_examples": {
+        "blames": [
+          {
+            "source": "(unattributed)",
+            "target": "INTELLIGENCE REVEALS: BROTHER OF TERRORIST BEHIND U.S. SYNAGOGUE ATTACK WAS A HEZBOLLAH TERRORIST  Hezbollah commander I",
+            "confidence": 0.35,
+            "evidence": "INTELLIGENCE REVEALS: BROTHER OF TERRORIST BEHIND U.S. SYNAGOGUE ATTACK WAS A HEZBOLLAH TERRORIST  Hezbollah commander Ibrahim Muhammad Ghazali was responsible for managing weapons operations within a specialized branch of the Badr Unit."
+          },
+          {
+            "source": "(unattributed)",
+            "target": "The unit",
+            "confidence": 0.35,
+            "evidence": "The unit is responsible for launching"
+          }
+        ],
+        "proposes_action": [
+          {
+            "source": "we",
+            "target": "be here for him .",
+            "confidence": 0.35,
+            "evidence": "Ran continued the same line of values, the same commitment, the same silent statement \"if needed, I'm here\", and today we should be here for him."
+          },
+          {
+            "source": "we",
+            "target": "needed our own home",
+            "confidence": 0.35,
+            "evidence": "After everything that happened in Europe, well, we realized we needed our own home."
+          }
+        ],
+        "protects": [
+          {
+            "source": "Ko",
+            "target": "endpoints",
+            "confidence": 0.45,
+            "evidence": "Big win for Israel’s cyber ecosystem    Palo Alto Networks acquires  startup Koi - founded in 2024 - for $400M.  Koi protects 500,000+ endpoints worldwide, securing enterprises against rogue AI agents, risky plugins & next-gen supply chain threats."
+          }
+        ]
+      }
+    }
+  }
+}

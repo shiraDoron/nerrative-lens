@@ -6,12 +6,12 @@ from telethon.errors import ChannelPrivateError, UsernameInvalidError
 from build_twitter_dataset import NARRATIVES_ACCOUNTS
 from config import NARRATIVES
 
-# מפתחות הגישה האישיים שהפקת מהאתר - נקראות ממשתנות סביבה, אף פעם לא מוטבעות בקוד.
+# Personal access credentials you obtained from the site - read from environment variables, never hardcoded.
 _API_ID = os.environ.get("TELEGRAM_API_ID")
 _API_HASH = os.environ.get("TELEGRAM_API_HASH")
 if not _API_ID or not _API_HASH:
     raise RuntimeError(
-        "חסרות משתנות סביבה TELEGRAM_API_ID / TELEGRAM_API_HASH. הגדר: "
+        "Missing TELEGRAM_API_ID / TELEGRAM_API_HASH environment variables. Set them with: "
         "$env:TELEGRAM_API_ID = '<id>'; $env:TELEGRAM_API_HASH = '<hash>' (PowerShell)."
     )
 API_ID = int(_API_ID)
@@ -20,12 +20,13 @@ API_HASH = _API_HASH
 NARRATIVES_CHANNELS = {
     "Zionist": ["southfirstresponders", "TheJerusalemPost", "BringThemHomeNow",
                 "abualiexpress", "HananyaNaftali", "OpenSourceIntel"],
-    # Resistance = ציר ההתנגדות האזורי. NOTE: AlJazeeraEnglish הוא borderline לפי
-    # מתודולוגיית ה-labeling - נותן הרבה תוכן פלסטיני/ביקורתי אך אינו מקור "Resistance"
-    # נקי כמו PressTV/Al Mayadeen/QudsNen, ועלול להוסיף רעש ל-ground truth. הושאר כרגע
-    # לפי החלטת המשתמשת, עם ההערה הזו לתשומת לב בניתוח/labeling.
-    # TODO: חסרים מקורות מתימן (Al Masirah English) ומעיראק/לבנון נוספים (Al-Manar
-    # English וכו') - נדרש handle מדויק לפני הוספה (לא לנחש usernames).
+    # Resistance = the regional "Axis of Resistance". NOTE: AlJazeeraEnglish is borderline per
+    # the labeling methodology - it provides a lot of Palestinian/critical content but isn't as
+    # clean a "Resistance" source as PressTV/Al Mayadeen/QudsNen, and may add noise to the
+    # ground truth. Left in for now per the user's decision, with this note for attention
+    # during analysis/labeling.
+    # TODO: missing sources from Yemen (Al Masirah English) and additional ones from Iraq/Lebanon
+    # (Al-Manar English etc.) - an exact handle is needed before adding (don't guess usernames).
     "Resistance": ["ResistanceNewsNetwork", "AlJazeeraEnglish", "TasnimNewsEN",
                    "AlMayadeenEnglish", "PressTV", "QudsNen", "Palestine_Chronicle"],
     "Western": ["WashingtonPost", "Bloomberg", "spectatorindex", "euronews_eng"],

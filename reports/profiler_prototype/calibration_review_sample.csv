@@ -1,0 +1,178 @@
+﻿text_id,narrative_name,text,system_actors_roles,system_relations,system_values,system_agendas,manual_actors_roles_feedback,manual_relations_feedback,manual_values_feedback,manual_agendas_feedback,annotator_notes
+calibration_0001,Left-wing,"unions are the backbone of the middle class, we need to make it easier to organize, not harder.","we = unknown (conf 0.0, agency active) [candidate: unknown]","we --proposes_action--> need to make it easier to organize , not harder . (conf 0.55)",(none detected),זכויות אדם וצדק חברתי: 'unions',,,,,
+calibration_0002,Left-wing,"Pray for simple people from Israel and Gaza 🙏 Life is more matters, instead of politics","Israel = unknown (conf 0.0, agency passive) [candidate: unknown]
+Gaza = unknown (conf 0.0, agency unknown) [candidate: unknown]",(none detected),(none detected),"דת, מסורת וזהות: 'Pray'",,,,,
+calibration_0003,Left-wing,"🗞Since the Gaza 'ceasefire' was announced, I have wondered what this word actually means. For Palestinians in the enclave, it was supposed to mean at least a brief moment of stability. Instead, very little has changed.  ✍ Opinion by Hassan Herzallah 🔗  https://www.middleeasteye.net/opinion/there-no-ceasefire-gaza?utm_source=telegram&utm_medium=social&utm_campaign=social_traffic","Gaza = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Palestinians = unknown (conf 0.0, agency passive) [candidate: unknown]
+Hassanherzallah = unknown (conf 0.0, agency passive) [candidate: unknown]
+Middleeasteye = unknown (conf 0.0, agency unknown) [candidate: unknown]",(none detected),יציבות וסדר: 'stability',דיפלומטיה ויחסים בינלאומיים: 'ceasefire',,,,,
+calibration_0004,Left-wing,"the climate crisis is literally happening right now and politicians are still taking money from fossil fuel lobbyists, ugh.",(none detected),(none detected),(none detected),"אקלים, אנרגיה ירוקה וסביבה: 'climate'",,,,,
+calibration_0005,Left-wing,LA Gave More Money to Cops While Cutting Fire Budgets. Now It’s Burning.  https://theintercept.com/2025/01/08/la-police-budget-palisades-fires/,"LA = unknown (conf 0.0, agency active) [candidate: unknown]",(none detected),(none detected),(none detected),,,,,
+calibration_0009,Resistance,Israeli opposition leader Yair Lapid discusses potential Gaza ceasefire deal at the Knesset @aljazeeraenglish,"Israel = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Yair Lapid = unknown (conf 0.0, agency active) [candidate: unknown]
+Gaza = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Knesset = unknown (conf 0.0, agency passive) [candidate: unknown]",(none detected),(none detected),"דיפלומטיה ויחסים בינלאומיים: 'ceasefire'
+דמוקרטיה, בחירות ומשילות: 'opposition'",,,,,
+calibration_0010,Resistance,"The Americans should know if they start a war, this time it will be a regional war.","United States = unknown (conf 0.0, agency active) [candidate: unknown]","United States --proposes_action--> know if they start a war , this time it will be a regional war . (conf 0.55)",(none detected),עימות ולוחמה - כללי: 'war',,,,,
+calibration_0011,Resistance,Breaking | Direct Iranian impact in southern occupied Palestine,"Iran = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Palestine = unknown (conf 0.0, agency passive) [candidate: unknown]",(none detected),(none detected),(none detected),,,,,
+calibration_0012,Resistance,"Wallah, I just want to see the sea once without having to go through three different checkpoints.","Wallah = unknown (conf 0.0, agency unknown) [candidate: unknown]",(none detected),(none detected),(none detected),,,,,
+calibration_0013,Resistance,"decisive and severe dealing with people who cooperate with the enemy  🔹First Deputy of the Judiciary: The judicial system will deal hard with people who are infiltrators, mercenaries and traitors and who cooperate and accompany the enemy under these conditions, and these people will not be included in any friendship. @TasnimNews","Judiciary = unknown (conf 0.0, agency passive) [candidate: unknown]
+Tanin = unknown (conf 0.0, agency unknown) [candidate: unknown]",(none detected),(none detected),(none detected),,,,,
+calibration_0017,Right-wing,Nearly 10% of Transportation Security Administration workers reportedly called in sick on Tuesday as the Democrats' partial government shutdown continued. MORE: https://bit.ly/4uEYK81,"Transportationsecurityadministration = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Democrats = unknown (conf 0.0, agency unknown) [candidate: unknown]",(none detected),ביטחון והישרדות: 'Security',"דמוקרטיה, בחירות ומשילות: 'Democrats'
+זכויות אדם וצדק חברתי: 'workers'",,,,,
+calibration_0018,Right-wing,"Bombshell Whistleblower Report: Mueller's Anti-Trump Witch Hunters Drank on the Job, Tried to Doctor Records, Violated Security Rules  The startling whistleblower report uncovers numerous allegations against the Mueller team that many people haven’t heard of even to this day.  https://w-j.co/s/47c18","Bombshellwhistleblow = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Mueller = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Anti Trumpwitchhunters (reconstructed) = unknown (conf 0.0, agency active) [candidate: unknown]
+Job = unknown (conf 0.0, agency passive) [candidate: unknown]
+Doctorrecords = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Securityrules = unknown (conf 0.0, agency passive) [candidate: unknown]
+Mueller = unknown (conf 0.0, agency unknown) [candidate: unknown]",(none detected),ביטחון והישרדות: 'Security',"תקיפות, סיכולים וחיסולים: 'Bombshell'",,,,,
+calibration_0019,Right-wing,Very cool!  https://1819news.com/news/item/poll-charlie-kirk-turning-point-usa-second-most-watched-conservative-platform-in-alabama-behind-fox-news,"Al = unknown (conf 0.0, agency unknown) [candidate: unknown]",(none detected),(none detected),(none detected),,,,,
+calibration_0020,Right-wing,“The assassination of political figures is not the same thing as just being shot in the throat for the crime of debating issues in the public square.” @benshapiro  discusses the terrifying reality of Charlie Kirk's assassination with  @billmaher  - and what it means for our nation.,"Ben = unknown (conf 0.0, agency active) [candidate: unknown]
+Charliekirk = unknown (conf 0.0, agency unknown) [candidate: unknown]
+we = unknown (conf 0.0, agency unknown) [candidate: unknown]",(none detected),(none detected),"תקיפות, סיכולים וחיסולים: 'assassination'
+לאומיות, ריבונות וטריטוריה: 'nation'
+הגירה, גבולות וביטחון פנים: 'crime'",,,,,
+calibration_0021,Right-wing,"SECRETARY HEGSETH on the media’s coverage of Operation Epic Fury:  “TDS is in their DNA. They want President Trump to fail. But you, the American people, know better.”","Operationepicfury = unknown (conf 0.0, agency passive) [candidate: unknown]
+TD = unknown (conf 0.0, agency active) [candidate: unknown]
+Trump = unknown (conf 0.0, agency active) [candidate: unknown]
+United States = unknown (conf 0.0, agency unknown) [candidate: unknown]",(none detected),(none detected),"עימות ולוחמה - כללי: 'Operation'
+תקשורת, תעמולה ודיסאינפורמציה: 'media'",,,,,
+calibration_0025,Russian,"Our traditional values are, well, they're under attack from these modern liberal agendas that don't fit our culture.","we = unknown (conf 0.0, agency unknown) [candidate: unknown]
+we = unknown (conf 0.0, agency unknown) [candidate: unknown]",(none detected),מסורת ומורשת: 'traditional',"תרבות, ספורט וחיי יומיום: 'traditional'",,,,,
+calibration_0026,Russian,"When Kash Patel says cyber actors then I just think Russia has these guys working for them.  ""Sorry, C3PO and Johnny Five were just settling a bet on who could hack the most Americans. They were not doing this as members of Russian intelligence.""  - Putin  @Slavyangrad","Kash Patel = unknown (conf 0.0, agency active) [candidate: unknown]
+Russia = unknown (conf 0.0, agency active) [candidate: unknown]
+C3PO = unknown (conf 0.0, agency active) [candidate: unknown]
+Johnnyfive = unknown (conf 0.0, agency unknown) [candidate: unknown]
+United States = unknown (conf 0.0, agency passive) [candidate: unknown]
+Russia = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Putin = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Slavyangrad = unknown (conf 0.0, agency unknown) [candidate: unknown]",(none detected),(none detected),"טכנולוגיה, חדשנות ומדע: 'cyber'",,,,,
+calibration_0027,Russian,"🎖🎖 by Russian Defence Ministry on progress of special military operation as of 14 March 2026  ❗️ Last night, in response to Ukraine's terrorist attacks on civilian facilities on the territory of Russia, the Armed Forces of the Russian Federation carried out a massive strike by ground-, air-, and sea-based long-range precision weaponry and attack UAVs against enterprises of the Ukrainian defence industry, energy infrastructure facilities used for the benefit of the Armed Forces of Ukraine, as well as the military airfields.  ✅ The goals of the strike were achieved. All the assigned targets were engaged.  📍 Units of the Sever Group of Forces took more advantageous lines and positions. Manpower and hardware of the AFU mechanised brigade and one territorial defence brigade have been hit near Miropolye, Pisarevka, Novaya Sech, and Kondratovka (Sumy region).  💥 In Kharkov region, units of two mechanised brigades, one airmobile brigade, and one motorised infantry brigade of the AFU have been hit near Udy, Volchanskye Khutora, and Verkhniy Saltov (Kharkov region).  ▪️ The AFU losses amounted to more than 225 troops, 16 motor vehicles, one field artillery gun, and one U.S.-made MLRS launcher. One counter-battery warfare station, one ammunition depot, and seven materiel depots were neutralised.  📍 The Zapad Group of Forces improved the situation along the front line. Strikes were delivered at manpower and hardware of two mechanised brigades of the AFU, one territorial defence brigade, and one border detachment of the State Border Guard Service of Ukraine close to Novoosinovo, Grushevka (Kharkov region), Yatskovka, Rubtsy, and Krasny Liman (Donetsk People's Republic).  ▪️ The enemy losses amounted to up to 190 troops, one infantry fighting vehicle, two U.S.-made M113 armoured personnel carriers, seven armoured fighting vehicles, 21 motor vehicles, and four artillery guns, including one 155-mm Polish-made Krab self-propelled artillery system. One counter-battery warfare station and four ammunition depots were neutralised.  📍 The Yuzhnaya Group of Forces took more advantageous lines and positions. Russian troops hit one mechanised brigade, one motorised infantry brigade, one assault brigade of the AFU, and one marine brigade near Konstantinovka, Druzhkovka, Alekseyevo-Druzhkovka, Novoselovka, and Aleksandrovka (Donetsk People's Republic).  ▪️ The enemy lost up to 140 troops, one U.S.-made M113 armoured personnel carrier, three armoured fighting vehicles, ten motor vehicles, three field artillery guns, and one Grad MLRS combat vehicle. Five ammunition and materiel depots were eliminated.  👉 See Part 2   🔹 Russian Defence Ministry","Russiandefenceministry = unknown (conf 0.0, agency passive) [candidate: unknown]
+Ukraine = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Russia = unknown (conf 0.0, agency passive) [candidate: unknown]
+Armedforcesoftherussianfederation = unknown (conf 0.0, agency active) [candidate: unknown]
+Ukraine = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Armedforcesofukraine = unknown (conf 0.0, agency passive) [candidate: unknown]
+Severgroupofforces = unknown (conf 0.0, agency passive) [candidate: unknown]
+AFU = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Miropolye = unknown (conf 0.0, agency passive) [candidate: unknown]
+Pisarevka = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Novaya = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Sech = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Kondratovka = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Sumy = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Kharkov = unknown (conf 0.0, agency unknown) [candidate: unknown]
+AFU = unknown (conf 0.0, agency passive) [candidate: unknown]
+Udy = unknown (conf 0.0, agency passive) [candidate: unknown]
+Volchanskye Khutora = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Verkhniysaltov = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Kharkov = unknown (conf 0.0, agency unknown) [candidate: unknown]
+AFU = unknown (conf 0.0, agency unknown) [candidate: unknown]
+U S (reconstructed) = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Zapadgroupofforces = unknown (conf 0.0, agency active) [candidate: unknown]
+AFU = unknown (conf 0.0, agency passive) [candidate: unknown]
+Stateborderguardserviceofukraine = unknown (conf 0.0, agency passive) [candidate: unknown]
+Novoosinovo = unknown (conf 0.0, agency passive) [candidate: unknown]
+Grushevka = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Kharkov = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Yatskovka = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Rubtsy = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Polish = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Yu = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Russia = unknown (conf 0.0, agency unknown) [candidate: unknown]
+goals = uncertain (conf 0.15, agency passive) [candidate: victim]",(none detected),ביטחון והישרדות: 'Defence',"עימות ולוחמה - כללי: 'Defence'
+צבא סדיר, כוחות ולוחמה קונבנציונלית: 'Armed Forces'
+נשק, טילים וכלי לחימה: 'weaponry'
+תקיפות, סיכולים וחיסולים: 'strike'
+טרור ואיום קיומי: 'terrorist'
+כלכלה, סחר ואנרגיה: 'industry'
+הומניטרי וסבל אזרחי: 'civilian'
+לאומיות, ריבונות וטריטוריה: 'territory'",,,,,
+calibration_0028,Russian,"Our strength isn't just in weapons; it's in our spirit, our resilience, our, uh, our unity.","we = uncertain (conf 0.15, agency unknown) [candidate: hero]
+we = uncertain (conf 0.15, agency unknown) [candidate: hero]
+we = uncertain (conf 0.15, agency unknown) [candidate: hero]
+we = uncertain (conf 0.15, agency unknown) [candidate: hero]
+we = uncertain (conf 0.15, agency unknown) [candidate: hero]",(none detected),סולידריות ואחריות קולקטיבית: 'unity',"נשק, טילים וכלי לחימה: 'weapons'",,,,,
+calibration_0029,Russian,"❗️Andrei Belousov inspects Sever Group of Forces  ▫️ On 17 March 2026, during a working visit to the zone of the special military operation, the Russian Defence Minister inspected units of the Sever Group of Forces and heard reports on the progress of operations at the command post. The main focus was on the expansion of the security belt on the territory of Sumy and Kharkov regions as well as strengthening the defence of the border regions of the Russian Federation.  💬 Commander of the Sever Group of Forces Colonel General Yevgeny Nikiforov reported to the Defence Minister on the successes of the units since the beginning of the year. As a result of cooperated actions, seven U.S.-made HIMARS and MLRS multiple rocket launchers were detected and destroyed.  📈 The commander also noted the increased effectiveness of the measures against enemy drones. Thanks to improved cohesion and training of FPV-interceptor teams, the effectiveness of long-range unmanned aerial vehicle engagement has been significantly improved.  💥 The Sever Group's Unmanned Systems Forces Commander reported to Andrei Belousov that an increase in the number of modern strike and reconnaissance drones made it possible to improve fire on enemy positions and provide continuous air surveillance in all directions.  ⚙️ He also added that an analysis centre had been set up at the unmanned system command post to assess the effectiveness of drone operators in real time. Maintenance elements equipped with programming equipment and 3D printers are deployed to ensure uninterrupted support of the units with UAVs. Thus, they can quickly prepare for the deployment unmanned aerial vehicles of various types. They are as follows: fixed-wing UAVs, hexacopters, copters, and FPV drones.  🤝At the end of the visit to the command post, Andrei Belousov presented state awards to servicemen of the Sever Group, who had distinguished themselves during combat missions. Those who showed courage, heroism and high professionalism in the special military operation received the Order of Courage and the Order 'For Merit Before Fatherland' with Swords, 1st and 2nd classes.   🔹 Russian Defence Ministry","Belous = unknown (conf 0.0, agency active) [candidate: unknown]
+Severgroupofforces = unknown (conf 0.0, agency passive) [candidate: unknown]
+Russia = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Sever Group Of Forces = unknown (conf 0.0, agency passive) [candidate: unknown]
+Sumy = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Kharkov = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Russianfederation = unknown (conf 0.0, agency passive) [candidate: unknown]
+Severgroupofforces = uncertain (conf 0.15, agency passive) [candidate: hero]
+Yevgeny Nikiforo = uncertain (conf 0.15, agency active) [candidate: hero]
+U S (reconstructed) = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Severgroup = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Unmannedsystemsforces = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Andreibelousov = unknown (conf 0.0, agency passive) [candidate: unknown]
+Andreibelousov = unknown (conf 0.0, agency active) [candidate: unknown]
+Se = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Russia = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Ministry = unknown (conf 0.0, agency unknown) [candidate: unknown]",(none detected),"ביטחון והישרדות: 'Defence'
+יציבות וסדר: 'Order'","עימות ולוחמה - כללי: 'military'
+צבא סדיר, כוחות ולוחמה קונבנציונלית: 'deployment'
+נשק, טילים וכלי לחימה: 'rocket'
+תקיפות, סיכולים וחיסולים: 'strike'
+לאומיות, ריבונות וטריטוריה: 'territory'",,,,,
+calibration_0033,Ukrainian,"Today is the first day of the holy month of Ramadan. This is a time of sincere prayer and deep faith. But, unfortunately, thousands of Ukrainian Muslims meet this day on the battlefield, and part of the Crimean Tatar people - under Russian occupation and in Russian captivity.   We remember about","Ramadan = unknown (conf 0.0, agency passive) [candidate: unknown]
+Ukrainianmuslims = unknown (conf 0.0, agency passive) [candidate: unknown]
+Crimeantatar = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Russia = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Russia = unknown (conf 0.0, agency unknown) [candidate: unknown]
+we = unknown (conf 0.0, agency active) [candidate: unknown]",(none detected),(none detected),"עימות ולוחמה - כללי: 'battlefield'
+דת, מסורת וזהות: 'holy'
+זיכרון היסטורי ועבר: 'remember'",,,,,
+calibration_0034,Ukrainian,"Air defense neutralized 109 out of 133 drones that the Russian army used to attack Ukraine at night, the Air Force of the Ukrainian Armed Forces reports. However, 20 drones were hit at 11 locations, and debris fell at seven.","Russia = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Ukraine = victim (conf 0.7, agency passive)
+Airforceoftheukrainianarmedforces = unknown (conf 0.0, agency active) [candidate: unknown]",(none detected),ביטחון והישרדות: 'defense',"עימות ולוחמה - כללי: 'defense'
+צבא סדיר, כוחות ולוחמה קונבנציונלית: 'army'
+נשק, טילים וכלי לחימה: 'drones'
+תקיפות, סיכולים וחיסולים: 'neutralized'",,,,,
+calibration_0035,Ukrainian,"❗️British Prime Minister Keir Starmer and Ukrainian President Volodymyr Zelenskyy signed a declaration on enhanced cooperation in the field of security and defense in London.  The declaration states that the two countries will work to develop a joint defense-industrial and technological ecosystem. This cooperation may include the creation of joint production lines, joint research and development, the integration of defense supply chains, and the development of industrial partnerships.","Keir Starmer = unknown (conf 0.0, agency active) [candidate: unknown]
+Ukraine = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Volodymyr Zelensky = unknown (conf 0.0, agency unknown) [candidate: unknown]
+United Kingdom = unknown (conf 0.0, agency passive) [candidate: unknown]",(none detected),ביטחון והישרדות: 'security',"עימות ולוחמה - כללי: 'defense'
+דיפלומטיה ויחסים בינלאומיים: 'cooperation'
+טכנולוגיה, חדשנות ומדע: 'technological'",,,,,
+calibration_0036,Ukrainian,May the New 2022 be full of joy and breathtaking visits to Ukraine   ig: Olya_flydji,"Ukraine = unknown (conf 0.0, agency passive) [candidate: unknown]",(none detected),(none detected),(none detected),,,,,
+calibration_0037,Ukrainian,Just saw another video from the front... those guys are literally superheroes in camouflage.,(none detected),(none detected),(none detected),(none detected),,,,,
+calibration_0041,Western,Universal education is like the best investment a country can make in its future.,(none detected),(none detected),(none detected),"כלכלה, סחר ואנרגיה: 'investment'
+זכויות אדם וצדק חברתי: 'education'",,,,,
+calibration_0042,Western,"We absolutely have to stand firm against authoritarian regimes, otherwise, what's next?","we = unknown (conf 0.0, agency active) [candidate: unknown]",(none detected),(none detected),(none detected),,,,,
+calibration_0043,Western,It's about strategic patience and resolve. We can't back down when our principles are challenged.,"we = unknown (conf 0.0, agency active) [candidate: unknown]
+we = unknown (conf 0.0, agency unknown) [candidate: unknown]",(none detected),(none detected),(none detected),,,,,
+calibration_0044,Western,"Buildings, cars, bridges; none exist without welding.  For one Kazakh family, the craft has shaped three generations, proving that human skill and creativity can’t be automated.  As demand for skilled workers grows in Kazakhstan, their story shows why craftsmanship still powers the country’s future.  Find out more on #VoicesfromCentralAsia: https://www.euronews.com/culture/2025/12/31/how-one-family-of-welders-shows-why-skilled-trades-still-matter-in-kazakhstan  In partnership with @media.damytu.qory","Kazakh = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Kazakhstancralas = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Kazak = unknown (conf 0.0, agency passive) [candidate: unknown]",demand --causes--> Kazakhstancralas (conf 0.5),(none detected),"דיפלומטיה ויחסים בינלאומיים: 'partnership'
+זכויות אדם וצדק חברתי: 'workers'
+זיכרון היסטורי ועבר: 'generations'",,,,,
+calibration_0045,Western,"Five European nations have determined that Russia poisoned Alexei Navalny.   This was a cowardly act from a frightened leader.  Russia has long acted as a terrorist state, relying on terrorist methods.  Poisoning political opponents. Silencing journalists. Invading peaceful","European = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Russia = unknown (conf 0.0, agency active) [candidate: unknown]
+Alexeinavalny = unknown (conf 0.0, agency passive) [candidate: unknown]
+Russia = uncertain (conf 0.15, agency active) [candidate: aggressor]",(none detected),(none detected),"טרור ואיום קיומי: 'terrorist'
+לאומיות, ריבונות וטריטוריה: 'nations'
+תקשורת, תעמולה ודיסאינפורמציה: 'journalists'",,,,,
+calibration_0049,Zionist,INTELLIGENCE REVEALS: BROTHER OF TERRORIST BEHIND U.S. SYNAGOGUE ATTACK WAS A HEZBOLLAH TERRORIST  Hezbollah commander Ibrahim Muhammad Ghazali was responsible for managing weapons operations within a specialized branch of the Badr Unit. The unit is responsible for launching,"United States = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Hezbollah = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Ibrahimmuhammadghazal = unknown (conf 0.0, agency unknown) [candidate: unknown]
+Badrunit = unknown (conf 0.0, agency passive) [candidate: unknown]","(unattributed) --uncertain--> INTELLIGENCE REVEALS: BROTHER OF TERRORIST BEHIND U.S. SYNAGOGUE ATTACK WAS A HEZBOLLAH TERRORIST  Hezbollah commander I (conf 0.35) [candidate: blames]
+(unattributed) --uncertain--> The unit (conf 0.35) [candidate: blames]",(none detected),"נשק, טילים וכלי לחימה: 'weapons'
+טרור ואיום קיומי: 'TERRORIST'
+דת, מסורת וזהות: 'SYNAGOGUE'",,,,,
+calibration_0050,Zionist,"ANOTHER CEASEFIRE VIOLATION: A terrorist crossed the Yellow Line in southern Gaza and approached IDF troops, posing an imminent threat.  The IAF struck and eliminated the terrorist in order to remove the threat.","Yellowline = unknown (conf 0.0, agency passive) [candidate: unknown]
+Gaza = unknown (conf 0.0, agency passive) [candidate: unknown]
+IDF = unknown (conf 0.0, agency unknown) [candidate: unknown]
+IAF = savior (conf 0.85, agency active)",(none detected),יציבות וסדר: 'order',"עימות ולוחמה - כללי: 'CEASEFIRE VIOLATION'
+צבא סדיר, כוחות ולוחמה קונבנציונלית: 'troops'
+תקיפות, סיכולים וחיסולים: 'eliminated'
+טרור ואיום קיומי: 'terrorist'
+דיפלומטיה ויחסים בינלאומיים: 'CEASEFIRE'",,,,,
+calibration_0051,Zionist,This morning we will continue to post videos and images that depict Hamas warcrimes and the sophistication of their premeditated attacks on civilian communities.,"Hamas = unknown (conf 0.0, agency unknown) [candidate: unknown]
+we = unknown (conf 0.0, agency active) [candidate: unknown]",(none detected),(none detected),"טרור ואיום קיומי: 'Hamas'
+הומניטרי וסבל אזרחי: 'civilian'",,,,,
+calibration_0052,Zionist,"🎙 Today's podcast is one of the most powerful channels for creating alternative communication, building personal branding and strengthening the image of you and your business.  The new videocast studios offer members of the Abu Ali Express group a particularly worthwhile promotion for those who want to start a high-level podcast - or for those who already have and want to level up.  🎥 4 sessions in the studio, each session lasting an hour and a half + full editing for the episode 💰 only 3,000 NIS instead of 4,500 NIS 👇 To leave details https://videocast.fillout.com/telegram","Abualiexpress = unknown (conf 0.0, agency unknown) [candidate: unknown]",(none detected),(none detected),"כלכלה, סחר ואנרגיה: 'business'",,,,,
+calibration_0053,Zionist,"We've always extended a hand for peace, but it takes two to tango, unfortunately.","we = unknown (conf 0.0, agency active) [candidate: unknown]",(none detected),(none detected),(none detected),,,,,

@@ -252,6 +252,53 @@ IDEOLOGY_LEXICON = {
 }
 
 # ----------------------------------------------------------------------------
+# 2.6 לקסיקון ערכים (Values) - עבור Narrative Fingerprint / NarrativeProfile
+#     בשונה מ-IDEOLOGY_LEXICON (מינוחי השקפת-עולם מפורשים כמו "שמרנות"/"סוציאליזם")
+#     ו-AGENDA_LEXICON (נושאים נדונים), זהו לקסיקון של ערכי-יסוד מופשטים יותר.
+#     הקטגוריות אינן רשימת מילים אד-הוק אלא נגזרות משילוב של שתי מסגרות מבוססות
+#     בספרות: Schwartz's Theory of Basic Human Values (1992) - ביטחון,
+#     self-direction/חירות, tradition/conformity, universalism (צדק/שוויון) -
+#     יחד עם ערכי לגיטימציה נפוצים בספרות של ניתוח נרטיבים פוליטיים/יחסים
+#     בינלאומיים (ריבונות, זהות קולקטיבית, יציבות, כבוד האדם). ציר ניתוח רביעי,
+#     משלים ל-Agenda/Rhetoric/Ideology.
+# ----------------------------------------------------------------------------
+
+VALUES_LEXICON = {
+    "ביטחון והישרדות": [
+        "security", "safety", "protect*", "defen*", "deterrence", "survival",
+        "safe haven", "existential", "self-defense", "self-defence",
+    ],
+    "חירות ואוטונומיה": [
+        "freedom", "liberty", "autonomy", "independence", "self-determination",
+        "free will", "free choice", "civil libert*",
+    ],
+    "ריבונות וזהות לאומית/קולקטיבית": [
+        "sovereign*", "self-rule", "national identity", "collective identity",
+        "self-govern*", "our identity", "national pride", "homeland",
+    ],
+    "שוויון וצדק": [
+        "equality", "equal right*", "justice", "fairness", "fair treatment",
+        "non-discriminat*", "equal treatment", "social justice",
+    ],
+    "זכויות אדם וכבוד האדם": [
+        "human right*", "dignity", "human dignity", "human worth", "respect for",
+        "humane treatment",
+    ],
+    "מסורת ומורשת": [
+        "tradition*", "heritage", "ancestors", "customs", "cultural heritage",
+        "religious heritage", "ancestral",
+    ],
+    "יציבות וסדר": [
+        "stability", "order", "rule of law", "security of the state", "predictab*",
+        "stable region", "law and order",
+    ],
+    "סולידריות ואחריות קולקטיבית": [
+        "solidarity", "unity", "community", "mutual aid", "brotherhood",
+        "collective responsibility", "shared responsibility", "stand together",
+    ],
+}
+
+# ----------------------------------------------------------------------------
 # 3. עזרי טקסט
 # ----------------------------------------------------------------------------
 
@@ -307,6 +354,7 @@ def build_pattern(terms):
 AGENDA_PATTERNS = {k: build_pattern(v) for k, v in AGENDA_LEXICON.items()}
 RHETORIC_PATTERNS = {k: build_pattern(v) for k, v in RHETORIC_LEXICON.items()}
 IDEOLOGY_PATTERNS = {k: build_pattern(v) for k, v in IDEOLOGY_LEXICON.items()}
+VALUES_PATTERNS = {k: build_pattern(v) for k, v in VALUES_LEXICON.items()}
 
 
 def clean_text(t):
